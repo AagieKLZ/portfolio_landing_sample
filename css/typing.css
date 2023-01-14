@@ -1,0 +1,26 @@
+/* initially hide the text */
+#typing-text {
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 40px;
+font-weight: normal;
+}
+
+/* animate the text cursor */
+#typing-text::after {
+  content: "|";
+  animation: blink 0.8s linear infinite;
+}
+
+/* keyframes for the animation */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
