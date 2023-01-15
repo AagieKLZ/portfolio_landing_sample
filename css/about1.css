@@ -1,0 +1,89 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.content{
+    z-index: 3;
+    position: absolute;
+    top: 5vh;
+    left: 10vw;
+}
+
+h1{
+    font-family: goldman;
+    color: white;
+    font-size: 4rem;
+    z-index: 4;
+    font-weight: normal;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.desc{
+    color: white;
+    width: 70%;
+    font-family: montserrat;
+    line-height: 2rem;
+    font-size: 1.25rem;
+}
+
+.bg-img{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/about.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:right;
+    opacity: 90%;
+    animation: show-img 0.5s linear 0s 1 forwards;
+}
+
+.icons{
+    position: absolute;
+    right: 5vw;
+    top: 12vh;
+    z-index: 4;
+    display: flex;
+    flex-direction: row;
+    width: 120px;
+    justify-content: space-between;
+}
+
+.icons > div{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.icons > div > a > img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.next{
+    position: absolute;
+    bottom: 2vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.next:hover{
+    transform: scale(1.05)
+}
+
+.next > * {
+    margin: 0 auto;
+    font-family: goldman;
+    font-size: 1.4em;
+    color: white;
+    fill: white;
+    cursor: pointer;
+}

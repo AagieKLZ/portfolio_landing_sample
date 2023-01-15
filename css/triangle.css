@@ -1,10 +1,29 @@
 @import url("globals.css");
 @import url("animations.css");
 
+:root{
+    --main-bg-color: #222C2A
+}
+
 .triangle{
     width: 0;
     height: 0;
     border-left: 120vw solid var(--main-bg-color);
+    border-right: 100vw solid transparent;
+    border-bottom: 100vh solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 90%;
+    transform: translateY(100%);
+    animation: show-triangle 0.4s linear 0s 1 forwards;
+}
+
+.triangle2{
+    width: 0;
+    height: 0;
+    border-left: 250vw solid var(--main-bg-color);
     border-right: 100vw solid transparent;
     border-bottom: 100vh solid transparent;
     position: absolute;

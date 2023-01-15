@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.content{
+    z-index: 3;
+    position: absolute;
+    top: 5vh;
+    left: 10vw;
+    width: 85%;
+}
+
+h1{
+    font-family: goldman;
+    color: white;
+    font-size: 4rem;
+    z-index: 4;
+    font-weight: normal;
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    text-decoration-thickness: 3px;
+}
+
+.bg-img{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/workbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:right;
+    opacity: 90%;
+    animation: show-img 0.5s linear 0s 1 forwards;
+}
+
+.main-content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.experience{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: 0 auto;
+    text-align: center;
+    font-family: goldman;
+    color: white;
+}
+
+.subtitles{
+    letter-spacing: 0.1em;
+}
+
+.company{
+    text-decoration: underline;
+}
+
+.details{
+    font-family: montserrat;
+    list-style-position: inside;
+}
+
+.experience > img{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.next{
+    position: absolute;
+    bottom: 2vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.next:hover{
+    transform: scale(1.05)
+}
+
+.next > * {
+    margin: 0 auto;
+    font-family: goldman;
+    font-size: 1.4em;
+    color: white;
+    fill: white;
+    cursor: pointer;
+}
